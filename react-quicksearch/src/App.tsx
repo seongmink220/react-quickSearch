@@ -108,12 +108,20 @@
 
 
 import TerminalMain from './terminal/terminalMain'
+import Dashboard from './Dashboard/index'
+import React from "react";
+import {Route, Routes} from "react-router-dom";
+import Main from "./Dashboard/index";
 // import Main from './RealTerminal/Service/index'
 
 function App() {
     return <>
         <section className="todoapp">
-            <TerminalMain />
+            {/*<TerminalMain />*/}
+            <Dashboard />
+            {/*<Routes>*/}
+            {/*    <Route path="/terminal/terminalMain.js" element={<Main />}></Route>*/}
+            {/*</Routes>*/}
         </section>
     </>
 }

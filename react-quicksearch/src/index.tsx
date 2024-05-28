@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
 import App from './App';
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-    <RecoilRoot>
-        <App />
-    </RecoilRoot>,
+    <BrowserRouter>
+        <React.StrictMode>
+            <RecoilRoot>
+                <App />
+            </RecoilRoot>
+        </React.StrictMode>
+    </BrowserRouter>,
     document.getElementById('root')
 );
 
